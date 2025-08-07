@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mi Web</title></head>
+<body>
+<h1>Mi Web</h1>
+<nav>
+<a href="{% url 'listado' %}">Listado</a> |
+<a href="{% url 'agregar' %}">Agregar Persona</a>
+</nav>
+<hr>
+{% block contenido %}{% endblock %}
+</body>
+</html>

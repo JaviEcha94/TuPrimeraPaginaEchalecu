@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block contenido %}
+<form method="get">
+<input type="text" name="buscar" placeholder="Buscar...">
+<button type="submit">Buscar</button>
+</form>
+<ul>
+{% for persona in personas %}
+<li>{{ persona.nombre }} - {{ persona.email }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
